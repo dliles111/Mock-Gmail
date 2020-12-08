@@ -3,11 +3,13 @@ import React from 'react';
 const Inbox = ({ emails }) => (
 
     <div>
-        <h5>{emails.recipient}</h5>
-        <h5>{emails.sender}</h5>
-        <h6>{emails.date}</h6>
-        <p>{emails.subject} </p>
+        <ul>
+        <i>From: {emails.sender}</i><br></br>
+        <i>Subject: {emails.subject} </i><br></br>
+        <i>To: {emails.sender}</i><br></br>
+        <i>{emails.date}</i>
         <p>{emails.message}</p>
+        </ul>
     </div>
 )
 
